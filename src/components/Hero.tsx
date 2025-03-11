@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -54,24 +53,6 @@ const Hero = () => {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/50 to-blue-800/30 mix-blend-multiply"></div>
-            </div>
-            
-            {/* Removed the bottom-left floating stat card as requested */}
-            
-            <div className="absolute -top-6 -right-6 md:top-8 md:-right-12 glass p-4 rounded-xl shadow-lg animate-fade-in" style={{ animationDelay: '0.8s', zIndex: 20 }}>
-              <div className="flex items-center gap-4">
-                <div className="bg-teal-600 rounded-lg p-3 text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                </div>
-                <div>
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FACC15" stroke="#FACC15" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    ))}
-                  </div>
-                  <p className="text-sm text-foreground/70">Client Satisfaction</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
