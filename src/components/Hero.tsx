@@ -23,7 +23,7 @@ const Hero = () => {
               Grow Your <span className="text-blue-600">ABA Practice</span> With Strategic Marketing
             </h1>
             
-            <p className="text-lg md:text-xl text-foreground/80 max-w-xl">We help ABA therapy providers connect with more families through tailored digital marketing strategies that increase visibility, build trust, and drive growth. TESTING GIT</p>
+            <p className="text-lg md:text-xl text-foreground/80 max-w-xl">We help ABA therapy providers connect with more families through tailored digital marketing strategies that increase visibility, build trust, and drive growth. TESTING GIT. EDIT AFTER GIT TRANSFER</p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg">
