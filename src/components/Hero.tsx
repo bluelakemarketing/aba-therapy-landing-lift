@@ -44,16 +44,16 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Image - Restored to the two women talking image */}
+          {/* Image - Updated to show coworkers on laptops with faces subtly hidden */}
           <div className="w-full lg:w-1/2 relative animate-slide-up z-0 lg:z-10 mt-8 lg:mt-0">
             <div className="relative z-10 overflow-hidden rounded-2xl shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&auto=format&fit=crop&q=90" 
-                alt="ABA Therapy Marketing" 
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&auto=format&fit=crop&q=90" 
+                alt="ABA Marketing Team Collaboration" 
                 className="w-full h-auto object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-transparent mix-blend-multiply"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/30 to-transparent mix-blend-multiply"></div>
             </div>
             
             {/* Floating stat card and reviews card */}
