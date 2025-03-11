@@ -56,18 +56,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/50 to-blue-800/30 mix-blend-multiply"></div>
             </div>
             
-            {/* Floating stat card and reviews card */}
-            <div className="absolute -bottom-6 -left-6 md:bottom-8 md:-left-12 glass p-4 rounded-xl shadow-lg animate-fade-in" style={{ animationDelay: '0.5s', zIndex: 20 }}>
-              <div className="flex items-center gap-4">
-                <div className="bg-blue-600 rounded-lg p-3 text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-trending-up"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
-                </div>
-                <div>
-                  <p className="text-sm text-foreground/70">Average Client Growth</p>
-                  <p className="text-xl font-bold text-foreground">35% Increase</p>
-                </div>
-              </div>
-            </div>
+            {/* Removed the bottom-left floating stat card as requested */}
             
             <div className="absolute -top-6 -right-6 md:top-8 md:-right-12 glass p-4 rounded-xl shadow-lg animate-fade-in" style={{ animationDelay: '0.8s', zIndex: 20 }}>
               <div className="flex items-center gap-4">
