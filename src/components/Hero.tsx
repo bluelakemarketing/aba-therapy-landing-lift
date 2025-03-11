@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Image - Updated to show coworkers on laptops with faces subtly hidden */}
+          {/* Image - Marketing team in office setting with privacy-focused overlay */}
           <div className="w-full lg:w-1/2 relative animate-slide-up z-0 lg:z-10 mt-8 lg:mt-0">
             <div className="relative z-10 overflow-hidden rounded-2xl shadow-2xl">
               <img 
@@ -53,7 +53,7 @@ const Hero = () => {
                 className="w-full h-auto object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/30 to-transparent mix-blend-multiply"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/40 to-blue-700/20 mix-blend-multiply"></div>
             </div>
             
             {/* Floating stat card and reviews card */}
