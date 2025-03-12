@@ -103,7 +103,7 @@ const Founder = () => {
                   <h3 className="text-xl font-semibold mb-2">Mission-Driven Approach</h3>
                   <p className="text-foreground/70">
                     Dovid is dedicated to helping ABA therapy providers grow their practices through ethical, effective marketing strategies that prioritize the needs of both providers and the families they serve.
-                  </p><br><br>
+                  </p><br></br>
                 </div>
               </div>
             </div>
