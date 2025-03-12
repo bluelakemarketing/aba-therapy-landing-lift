@@ -16,7 +16,7 @@ const About = () => {
           {/* Image Side */}
           <div className="relative animate-slide-right">
             <img 
-              src="https://unsplash.com/photos/person-writing-on-white-paper-gcsNOsPEXfs?q=80&w=2070&auto=format&fit=crop" 
+              src="https://unsplash.com/photos/person-writing-on-white-paper-gcsNOsPEXfsq=80&w=2070&auto=format&fit=crop" 
               alt="BlueLake Marketing Team" 
               className="rounded-2xl shadow-xl w-full"
               loading="lazy"
