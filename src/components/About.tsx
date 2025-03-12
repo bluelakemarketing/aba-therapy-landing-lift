@@ -1,10 +1,7 @@
-
 import { Users, Target, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 md:py-28 bg-blue-50 relative overflow-hidden">
+  return <section id="about" className="py-20 md:py-28 bg-blue-50 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-blue-100 mix-blend-multiply filter blur-3xl opacity-70"></div>
@@ -15,12 +12,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image Side */}
           <div className="relative animate-slide-right">
-            <img 
-              src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2070&auto=format&fit=crop"
-              alt="BlueLake Marketing Team" 
-              className="rounded-2xl shadow-xl w-full"
-              loading="lazy"
-            />
+            <img alt="BlueLake Marketing Team" className="rounded-2xl shadow-xl w-full" loading="lazy" src="/lovable-uploads/dd695409-53d6-4f1b-976a-7c396a2f6829.jpg" />
             
             {/* Floating elements */}
             <div className="absolute -bottom-6 -left-6 md:-bottom-8 md:-left-8 glass p-4 rounded-xl shadow-lg">
@@ -77,7 +69,7 @@ const About = () => {
               
               <div className="flex gap-4">
                 <div className="bg-white rounded-full p-3 shadow-md">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-brain text-blue-600"><path d="M9.5 2a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/><path d="M14.5 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"/><path d="M19.5 7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"/><path d="M19.5 12a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"/><path d="M14.5 17a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"/><path d="M9.5 17a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/><path d="M4.5 12a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/><path d="M4.5 7a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/><path d="M9.5 7a2.5 2.5 0 1 0 5 0"/><path d="M7 12h10"/><path d="M9.5 17a2.5 2.5 0 1 0 5 0"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-brain text-blue-600"><path d="M9.5 2a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" /><path d="M14.5 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" /><path d="M19.5 7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" /><path d="M19.5 12a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" /><path d="M14.5 17a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" /><path d="M9.5 17a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" /><path d="M4.5 12a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" /><path d="M4.5 7a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" /><path d="M9.5 7a2.5 2.5 0 1 0 5 0" /><path d="M7 12h10" /><path d="M9.5 17a2.5 2.5 0 1 0 5 0" /></svg>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Data-Driven Strategies</h3>
@@ -89,7 +81,7 @@ const About = () => {
               
               <div className="flex gap-4">
                 <div className="bg-white rounded-full p-3 shadow-md">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-heart-handshake text-blue-600"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"/><path d="m18 15-2-2"/><path d="m15 18-2-2"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-heart-handshake text-blue-600"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66" /><path d="m18 15-2-2" /><path d="m15 18-2-2" /></svg>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Compassionate Approach</h3>
@@ -106,8 +98,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
