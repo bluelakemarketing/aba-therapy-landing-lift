@@ -1,5 +1,7 @@
+
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 const Hero = () => {
   return <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
       {/* Background elements */}
@@ -39,6 +41,22 @@ const Hero = () => {
               <p className="text-sm text-foreground/60">Trusted by ABA providers across the country</p>
               <div className="h-px bg-foreground/10 flex-grow"></div>
             </div>
+            
+            {/* Google Partner Badge */}
+            <div className="pt-4">
+              <a 
+                href="https://www.google.com/partners/agency?id=9350880620" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <img 
+                  src="/lovable-uploads/3b71518f-5bd5-4481-8cd2-5cb1e15754cc.png" 
+                  alt="Google Partner" 
+                  className="h-16 w-auto hover:opacity-90 transition-opacity"
+                />
+              </a>
+            </div>
           </div>
           
           {/* Image - Office marketing team working on laptops with privacy-focused overlay */}
@@ -52,4 +70,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;
