@@ -107,11 +107,13 @@ const Founder = () => {
                 </div>
               </div>
             </div>
-            
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg"><a href="https://www.linkedin.com/in/dovidrotshtein/">
-              Get in Touch
+
+            <div>
+            <a href="https://www.linkedin.com/in/dovidrotshtein/"> 
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg">
+               Get in Touch
             </Button>
-              </a>
+              </a></div>
           </div>
         </div>
       </div>
