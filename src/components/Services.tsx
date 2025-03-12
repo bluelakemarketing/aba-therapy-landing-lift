@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -136,7 +135,6 @@ const Services = () => {
                   <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
                   <p className="text-lg text-foreground/70 mb-6">{service.description}</p>
                   
-                  <h4 className="font-medium text-lg mb-4">Key Benefits</h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                     {service.benefits.map((benefit, index) => (
                       <div key={index} className="flex items-center gap-2">
@@ -149,7 +147,7 @@ const Services = () => {
                   </div>
                   
                   <Button className={`${service.color} hover:opacity-90 transition-opacity text-white rounded-full`}>
-                    Learn More
+                    Contact Us
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
