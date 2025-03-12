@@ -101,7 +101,7 @@ const About = () => {
             </div>
             
             <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg">
-              Learn More About Us
+              Get in Touch
             </Button>
           </div>
         </div>
