@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -16,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Text Content */}
-          <div className="w-full lg:w-1/2 space-y-6 animate-fade-in z-10">
+          <div className="w-full lg:w-1/2 space-y-6 animate-fade-in z-10 relative">
             <div className="inline-block px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-sm font-medium">
               ABA Therapy Digital Marketing Specialists
             </div>
@@ -43,7 +42,7 @@ const Hero = () => {
             </div>
             
             {/* Google Partner Badge */}
-            <div className="pt-4">
+            <div className="absolute -bottom-20 lg:-right-20 z-20 transform translate-y-1/2">
               <a 
                 href="https://www.google.com/partners/agency?id=9350880620" 
                 target="_blank" 
@@ -53,13 +52,13 @@ const Hero = () => {
                 <img 
                   src="/lovable-uploads/3b71518f-5bd5-4481-8cd2-5cb1e15754cc.png" 
                   alt="Google Partner" 
-                  className="h-16 w-auto hover:opacity-90 transition-opacity"
+                  className="h-24 w-auto hover:opacity-90 transition-opacity shadow-lg"
                 />
               </a>
             </div>
           </div>
           
-          {/* Image - Office marketing team working on laptops with privacy-focused overlay */}
+          {/* Image */}
           <div className="w-full lg:w-1/2 relative animate-slide-up z-0 lg:z-10 mt-8 lg:mt-0">
             <div className="relative z-10 overflow-hidden rounded-2xl shadow-2xl">
               <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&auto=format&fit=crop&q=90" alt="Marketing Team Collaboration" className="w-full h-auto object-cover" loading="lazy" />
