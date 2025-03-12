@@ -42,7 +42,7 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-sm text-foreground/70">Collective Experience</p>
-                  <p className="text-2xl font-bold text-foreground">15+ Years</p>
+                  <p className="text-2xl font-bold text-foreground">20+ Years</p>
                 </div>
               </div>
             </div>
