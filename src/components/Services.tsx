@@ -10,11 +10,11 @@ const services = [
   {
     id: 1,
     title: "SEO for ABA Practices",
-    description: "Rank higher in local search results and reach more families seeking ABA therapy services in your area.",
+    description: "Rank higher in Google Local Search results and reach more families seeking ABA therapy services in your area.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
     ),
-    benefits: ["Local SEO optimization", "Keyword research", "Content strategy", "Authority building"],
+    benefits: ["Local SEO optimization", "Keyword research", "Content strategy", "Google Business Profile optimization"],
     color: "bg-blue-500",
   },
   {
@@ -34,7 +34,7 @@ const services = [
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-layout"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
     ),
-    benefits: ["Mobile-responsive design", "ADA compliance", "Lead generation forms", "Client testimonials"],
+    benefits: ["Mobile-responsive design", "Custom design", "Lead generation forms", "Compatible on all browsers"],
     color: "bg-indigo-500",
   },
   {
