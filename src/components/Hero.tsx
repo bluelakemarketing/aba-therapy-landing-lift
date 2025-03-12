@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -40,9 +41,17 @@ const Hero = () => {
               <p className="text-sm text-foreground/60">Trusted by ABA providers across the country</p>
               <div className="h-px bg-foreground/10 flex-grow"></div>
             </div>
+          </div>
+          
+          {/* Image */}
+          <div className="w-full lg:w-1/2 relative animate-slide-up z-0 lg:z-10 mt-8 lg:mt-0">
+            <div className="relative z-10 overflow-hidden rounded-2xl shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&auto=format&fit=crop&q=90" alt="Marketing Team Collaboration" className="w-full h-auto object-cover" loading="lazy" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/50 to-blue-800/30 mix-blend-multiply"></div>
+            </div>
             
-            {/* Google Partner Badge */}
-            <div className="absolute -bottom-20 lg:-right-20 z-20 transform translate-y-1/2">
+            {/* Google Partner Badge - moved to overlap with image */}
+            <div className="absolute -bottom-10 -left-10 z-20">
               <a 
                 href="https://www.google.com/partners/agency?id=9350880620" 
                 target="_blank" 
@@ -55,14 +64,6 @@ const Hero = () => {
                   className="h-24 w-auto hover:opacity-90 transition-opacity shadow-lg"
                 />
               </a>
-            </div>
-          </div>
-          
-          {/* Image */}
-          <div className="w-full lg:w-1/2 relative animate-slide-up z-0 lg:z-10 mt-8 lg:mt-0">
-            <div className="relative z-10 overflow-hidden rounded-2xl shadow-2xl">
-              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&auto=format&fit=crop&q=90" alt="Marketing Team Collaboration" className="w-full h-auto object-cover" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/50 to-blue-800/30 mix-blend-multiply"></div>
             </div>
           </div>
         </div>
