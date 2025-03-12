@@ -92,7 +92,10 @@ const About = () => {
               </div>
             </div>
             
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg">
+            <Button 
+              className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg"
+              onClick={() => window.open('https://www.linkedin.com/in/dovidrotshtein/', '_blank')}
+            >
               Get in Touch
             </Button>
           </div>
