@@ -103,17 +103,17 @@ const Founder = () => {
                   <h3 className="text-xl font-semibold mb-2">Mission-Driven Approach</h3>
                   <p className="text-foreground/70">
                     Dovid is dedicated to helping ABA therapy providers grow their practices through ethical, effective marketing strategies that prioritize the needs of both providers and the families they serve.
-                  </p>
+                  </p><br><br>
                 </div>
               </div>
             </div>
 
-            <div>
+            
             <a href="https://www.linkedin.com/in/dovidrotshtein/"> 
             <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg">
                Get in Touch
             </Button>
-              </a></div>
+              </a>
           </div>
         </div>
       </div>
