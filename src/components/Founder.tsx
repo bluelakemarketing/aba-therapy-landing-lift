@@ -34,7 +34,7 @@ const Founder = () => {
                 </div>
                 <div>
                   <p className="text-xs text-foreground/70">Experience</p>
-                  <p className="text-xl font-bold text-foreground">15+ Years</p>
+                  <p className="text-xl font-bold text-foreground">20+ Years</p>
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@ const Founder = () => {
             </h2>
             
             <p className="text-lg text-foreground/70">
-              A passionate digital marketing specialist with deep expertise in the ABA therapy sector, Dovid founded BlueLake Marketing to help therapy providers connect with the families who need them most.
+              Dovid gained deep marketing expertise as a Copywriter at Ganeden Biotech (5+ years), managing SEO, SEM, and social media for national brands like Digestive Advantage® and enLiven Yogurt. He later served as Marketing Manager at 121eCommerce (nearly 4 years), overseeing digital strategies, performance analysis, partner management, and leading the creation of a new corporate website.
             </p>
             
             <div className="space-y-6">
@@ -108,9 +108,10 @@ const Founder = () => {
               </div>
             </div>
             
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg">
-              Connect on LinkedIn
+            <a href="https://www.linkedin.com/in/dovidrotshtein/" target="_blank" rel="noopener noreferrer"><Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg">
+              Get in Touch
             </Button>
+              </a>
           </div>
         </div>
       </div>
