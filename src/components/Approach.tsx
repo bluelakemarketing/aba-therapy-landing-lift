@@ -8,7 +8,7 @@ const steps = [
     title: "Discovery & Analysis",
     description: "We start by understanding your ABA practice, target audience, and business goals.",
     details: "During this phase, we conduct a comprehensive analysis of your current marketing efforts, website performance, and competitive landscape. We identify opportunities for growth and develop a strategic roadmap tailored to your specific needs.",
-    image: "/lovable-uploads/e9ede858-ea06-440d-a5a2-e4fdca3e6811.png",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
     benefits: [
       "In-depth market analysis",
       "Competitor research",
@@ -16,8 +16,63 @@ const steps = [
       "Social media assessment",
       "Goal setting and KPI definition"
     ]
+  },
+  {
+    id: 2,
+    title: "Strategic Planning",
+    description: "We develop a customized marketing strategy aligned with your practice's unique needs.",
+    details: "Our team creates a comprehensive marketing plan that outlines the specific tactics, channels, and messaging needed to reach your target audience effectively. We focus on strategies that will generate qualified leads and increase your practice's visibility.",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop",
+    benefits: [
+      "Customized marketing plan",
+      "Channel selection and prioritization",
+      "Budget allocation",
+      "Content strategy development",
+      "Campaign timeline creation"
+    ]
+  },
+  {
+    id: 3,
+    title: "Implementation",
+    description: "We execute all aspects of your marketing plan with precision and attention to detail.",
+    details: "Our team handles the implementation of your marketing strategy across all channels, from website development to content creation and paid advertising campaigns. We ensure all elements work together cohesively to maximize your results.",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
+    benefits: [
+      "Website optimization",
+      "Content creation and publishing",
+      "Paid advertising setup",
+      "Social media management",
+      "Local SEO implementation"
+    ]
+  },
+  {
+    id: 4,
+    title: "Monitoring & Optimization",
+    description: "We continuously track performance and make data-driven adjustments to improve results.",
+    details: "Using advanced analytics tools, we monitor the performance of all marketing activities and make strategic adjustments to optimize your campaigns. This iterative approach ensures we're always improving your return on investment.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+    benefits: [
+      "Real-time performance tracking",
+      "A/B testing and refinement",
+      "Budget optimization",
+      "Keyword and targeting adjustments",
+      "Conversion rate optimization"
+    ]
+  },
+  {
+    id: 5,
+    title: "Reporting & Growth Planning",
+    description: "We provide transparent reporting and collaborate on long-term growth strategies.",
+    details: "Through regular reporting and strategic meetings, we keep you informed about your marketing performance and collaborate on plans for scaling your success. Our goal is to establish a long-term partnership focused on growing your ABA practice.",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop",
+    benefits: [
+      "Comprehensive monthly reports",
+      "Strategic review meetings",
+      "Long-term growth planning",
+      "Industry trend analysis",
+      "Scaling successful campaigns"
+    ]
   }
-  
 ];
 
 const Approach = () => {
