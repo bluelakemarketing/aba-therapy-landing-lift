@@ -8,7 +8,7 @@ const steps = [
     title: "Discovery & Analysis",
     description: "We start by understanding your ABA practice, target audience, and business goals.",
     details: "During this phase, we conduct a comprehensive analysis of your current marketing efforts, website performance, and competitive landscape. We identify opportunities for growth and develop a strategic roadmap tailored to your specific needs.",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
+    image: "/lovable-uploads/eedd7461-163e-4caa-9943-f16c402fd5f8.png",
     benefits: [
       "In-depth market analysis",
       "Competitor research",
