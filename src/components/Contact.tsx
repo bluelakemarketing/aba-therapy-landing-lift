@@ -128,11 +128,7 @@ const Contact = () => {
                     <p className="text-xl font-medium">dovid@bluelakemarketing.com</p>
                   </div>
                 </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="bg-blue-100 text-blue-700 rounded-full p-3 mt-1">
-                    <MapPin className="w-5 h-5" />
-                  </div>
+              
   
                 </div>
               </div>
