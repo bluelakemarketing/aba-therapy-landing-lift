@@ -129,8 +129,7 @@ const Contact = () => {
                   </div>
                 </div>
               
-  
-                </div>
+
               </div>
               
               <div className="mt-10">
