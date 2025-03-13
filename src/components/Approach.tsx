@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Check } from "lucide-react";
 
@@ -50,7 +49,7 @@ const steps = [
     title: "Monitoring & Optimization",
     description: "We continuously track performance and make data-driven adjustments to improve results.",
     details: "Using advanced analytics tools, we monitor the performance of all marketing activities and make strategic adjustments to optimize your campaigns. This iterative approach ensures we're always improving your return on investment.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2070&auto=format&fit=crop",
     benefits: [
       "Real-time performance tracking",
       "A/B testing and refinement",
