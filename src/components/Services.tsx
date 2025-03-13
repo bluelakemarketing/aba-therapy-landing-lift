@@ -1,6 +1,7 @@
+
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle, Award, Shield, Users, Clock, Zap, ThumbsUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Import this at the top of your file
@@ -69,6 +70,33 @@ const services = [
   },
 ];
 
+const reasons = [
+  {
+    icon: <Award className="w-5 h-5 text-blue-600" />,
+    text: "Specialized in ABA therapy marketing"
+  },
+  {
+    icon: <Shield className="w-5 h-5 text-blue-600" />,
+    text: "HIPAA-compliant marketing practices"
+  },
+  {
+    icon: <Users className="w-5 h-5 text-blue-600" />,
+    text: "Custom strategies for your unique needs"
+  },
+  {
+    icon: <ThumbsUp className="w-5 h-5 text-blue-600" />,
+    text: "Proven track record of client growth"
+  },
+  {
+    icon: <Zap className="w-5 h-5 text-blue-600" />,
+    text: "Transparent reporting and communication"
+  },
+  {
+    icon: <Clock className="w-5 h-5 text-blue-600" />,
+    text: "White glove customer service"
+  }
+];
+
 const Services = () => {
   const [activeService, setActiveService] = useState(services[0].id);
 
@@ -90,7 +118,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20">
           {/* Service Tabs */}
           <div className="lg:col-span-4 order-2 lg:order-1">
             <div className="bg-gray-50 rounded-2xl p-2 animate-slide-right">
@@ -153,6 +181,45 @@ const Services = () => {
                 </div>
               )
             ))}
+          </div>
+        </div>
+        
+        {/* Why Work With Us section - Enhanced and redesigned */}
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-10 shadow-md border border-blue-100 animate-fade-in">
+            <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+              <div className="bg-white/80 p-4 rounded-full">
+                <div className="bg-blue-600 text-white p-4 rounded-full">
+                  <Award className="w-8 h-8" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-2 text-blue-800">Why Partner With BlueLake Marketing?</h3>
+                <p className="text-lg text-blue-700/80">
+                  We specialize exclusively in helping ABA therapy practices grow through proven marketing strategies tailored to your unique needs.
+                </p>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {reasons.map((reason, index) => (
+                <div key={index} className="bg-white/80 rounded-xl p-5 shadow-sm hover:shadow transition-all duration-300 border border-blue-100">
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 bg-blue-50 rounded-lg mt-0.5">
+                      {reason.icon}
+                    </div>
+                    <p className="font-medium text-foreground/90">{reason.text}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+            <div className="mt-10 text-center">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-full text-lg shadow-md hover:shadow-lg transition-all">
+                Get Started Today
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
           </div>
         </div>
       </div>

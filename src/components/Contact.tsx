@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -128,8 +127,6 @@ const Contact = () => {
                     <p className="text-xl font-medium">dovid@bluelakemarketing.com</p>
                   </div>
                 </div>
-              
-
               </div>
               
               <div className="mt-10">
@@ -140,37 +137,6 @@ const Contact = () => {
                 <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12">
                   BOOK DISCOVERY CALL
                 </Button>
-              </div>
-            </div>
-            
-            <div className="bg-blue-50 rounded-2xl p-8">
-              <h3 className="text-xl font-bold mb-4">Why Work With Us?</h3>
-              
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
-                  <p className="text-foreground/80">Specialized in ABA therapy marketing</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
-                  <p className="text-foreground/80">Custom strategies for your unique needs</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
-                  <p className="text-foreground/80">Proven track record of client growth</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
-                  <p className="text-foreground/80">HIPAA-compliant marketing practices</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
-                  <p className="text-foreground/80">Transparent reporting and communication</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
-                  <p className="text-foreground/80">White glove customer service</p>
-                </div>
               </div>
             </div>
           </div>
