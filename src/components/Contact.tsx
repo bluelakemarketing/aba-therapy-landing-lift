@@ -30,7 +30,7 @@ const Contact = () => {
       // Prepare email data
       const emailData = {
         to: "dovid@bluelakemarketing.com",
-        subject: `New contact form submission from ${formData.name}`,
+        subject: `New contact form   submission from ${formData.name}`,
         message: `
           Name: ${formData.name}
           Email: ${formData.email}
@@ -115,7 +115,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-foreground/60 text-sm">Phone</p>
-                    <p className="text-xl font-medium">+1 (800) 123-4567</p>
+                    <p className="text-xl font-medium">+1 (216) 906-3962</p>
                   </div>
                 </div>
                 
@@ -125,7 +125,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-foreground/60 text-sm">Email</p>
-                    <p className="text-xl font-medium">info@bluelakemarketing.com</p>
+                    <p className="text-xl font-medium">dovid@bluelakemarketing.com</p>
                   </div>
                 </div>
                 
@@ -133,10 +133,7 @@ const Contact = () => {
                   <div className="bg-blue-100 text-blue-700 rounded-full p-3 mt-1">
                     <MapPin className="w-5 h-5" />
                   </div>
-                  <div>
-                    <p className="text-foreground/60 text-sm">Office</p>
-                    <p className="text-xl font-medium">123 Digital Avenue, Suite 200<br />San Francisco, CA 94103</p>
-                  </div>
+  
                 </div>
               </div>
               
@@ -146,7 +143,7 @@ const Contact = () => {
                   Book a free 30-minute consultation to discuss your ABA practice's marketing needs.
                 </p>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12">
-                  Schedule Consultation
+                  BOOK DISCOVERY CALL
                 </Button>
               </div>
             </div>
@@ -174,6 +171,10 @@ const Contact = () => {
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
                   <p className="text-foreground/80">Transparent reporting and communication</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
+                  <p className="text-foreground/80">White glove customer service</p>
                 </div>
               </div>
             </div>
