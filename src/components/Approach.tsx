@@ -42,7 +42,8 @@ const steps = [
       "Content creation and publishing",
       "Paid advertising setup",
       "Social media management",
-      "Local SEO implementation"
+      "Local SEO implementation",
+      "Landing page design"
     ]
   },
   {
@@ -67,7 +68,7 @@ const steps = [
     image: "/lovable-uploads/53652b89-31fc-465e-a889-e6fd9f5bdfb9.png",
     benefits: [
       "Comprehensive monthly reports",
-      "Strategic review meetings",
+      "Weekly lead tracking meetings",
       "Long-term growth planning",
       "Industry trend analysis",
       "Scaling successful campaigns"
