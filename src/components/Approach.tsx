@@ -64,7 +64,7 @@ const steps = [
     title: "Reporting & Growth Planning",
     description: "We provide transparent reporting and collaborate on long-term growth strategies.",
     details: "Through regular reporting and strategic meetings, we keep you informed about your marketing performance and collaborate on plans for scaling your success. Our goal is to establish a long-term partnership focused on growing your ABA practice.",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop",
+    image: "/lovable-uploads/53652b89-31fc-465e-a889-e6fd9f5bdfb9.png",
     benefits: [
       "Comprehensive monthly reports",
       "Strategic review meetings",
