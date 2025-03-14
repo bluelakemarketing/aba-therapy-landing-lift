@@ -16,9 +16,9 @@ const Founder = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-8">
-        <div className="flex flex-col gap-16 items-center">
-          {/* Image Section - Always at the top */}
-          <div className="relative w-full max-w-xs mx-auto lg:max-w-sm animate-slide-left">
+        <div className="flex flex-col lg:flex-row items-center gap-16">
+          {/* Mobile-only image at top */}
+          <div className={`lg:hidden w-full max-w-xs mx-auto animate-slide-left ${isMobile ? 'block' : 'hidden'}`}>
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img 
                 src="/lovable-uploads/1f85aefa-8d26-41df-ba56-5743d04297db.png" 
@@ -29,8 +29,8 @@ const Founder = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             </div>
             
-            {/* Floating elements */}
-            <div className="absolute -bottom-5 -left-5 md:-bottom-6 md:-left-6 glass p-3 rounded-xl shadow-lg">
+            {/* Floating elements for mobile */}
+            <div className="absolute -bottom-5 -left-5 glass p-3 rounded-xl shadow-lg">
               <div className="flex items-center gap-3">
                 <div className="bg-blue-600 rounded-lg p-2 text-white">
                   <Trophy size={20} />
@@ -42,7 +42,7 @@ const Founder = () => {
               </div>
             </div>
             
-            <div className="absolute -top-5 -right-5 md:-top-6 md:-right-6 glass p-3 rounded-xl shadow-lg">
+            <div className="absolute -top-5 -right-5 glass p-3 rounded-xl shadow-lg">
               <div className="flex items-center gap-3">
                 <div className="bg-teal-600 rounded-lg p-2 text-white">
                   <Lightbulb size={20} />
@@ -55,8 +55,8 @@ const Founder = () => {
             </div>
           </div>
           
-          {/* Content Section */}
-          <div className="space-y-8 w-full animate-slide-right">
+          {/* Content Side */}
+          <div className="space-y-8 w-full lg:w-1/2 animate-slide-right order-2 lg:order-1">
             <div className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
               Meet Our Founder
             </div>
@@ -106,17 +106,55 @@ const Founder = () => {
                   <h3 className="text-xl font-semibold mb-2">Mission-Driven Approach</h3>
                   <p className="text-foreground/70">
                     Dovid is dedicated to helping ABA therapy providers grow their practices through ethical, effective marketing strategies that prioritize the needs of both providers and the families they serve.
-                  </p><br></br>
+                  </p>
                 </div>
               </div>
             </div>
             
             <Button 
-               className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg"
-               onClick={() => window.open('https://www.linkedin.com/in/dovidrotshtein/', '_blank')}
-             >
-               Get in Touch
-             </Button>
+              className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg"
+              onClick={() => window.open('https://www.linkedin.com/in/dovidrotshtein/', '_blank')}
+            >
+              Get in Touch
+            </Button>
+          </div>
+          
+          {/* Desktop Image - Only visible on larger screens */}
+          <div className="hidden lg:block relative w-full lg:w-1/2 max-w-xs mx-auto lg:max-w-sm animate-slide-left order-1 lg:order-2">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="/lovable-uploads/1f85aefa-8d26-41df-ba56-5743d04297db.png" 
+                alt="Dovid Rotshtein - Founder of BlueLake Marketing" 
+                className="w-full rounded-2xl object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+            </div>
+            
+            {/* Floating elements - Desktop version */}
+            <div className="absolute -bottom-6 -left-6 glass p-3 rounded-xl shadow-lg">
+              <div className="flex items-center gap-3">
+                <div className="bg-blue-600 rounded-lg p-2 text-white">
+                  <Trophy size={20} />
+                </div>
+                <div>
+                  <p className="text-xs text-foreground/70">Experience</p>
+                  <p className="text-xl font-bold text-foreground">20+ Years</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="absolute -top-6 -right-6 glass p-3 rounded-xl shadow-lg">
+              <div className="flex items-center gap-3">
+                <div className="bg-teal-600 rounded-lg p-2 text-white">
+                  <Lightbulb size={20} />
+                </div>
+                <div>
+                  <p className="text-xs text-foreground/70">Founder</p>
+                  <p className="text-xl font-bold text-foreground">Since 2015</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
