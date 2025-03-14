@@ -6,11 +6,11 @@ import Services from "@/components/Services";
 import About from "@/components/About";
 import Founder from "@/components/Founder";
 import Approach from "@/components/Approach";
+import CaseStudy from "@/components/CaseStudy";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { toast } from "sonner";
-import { motion } from "framer-motion";
 
 const Index = () => {
   useEffect(() => {
@@ -56,6 +56,7 @@ const Index = () => {
       <About />
       <Founder />
       <Approach />
+      <CaseStudy />
       <Testimonials />
       <Contact />
       <Footer />
