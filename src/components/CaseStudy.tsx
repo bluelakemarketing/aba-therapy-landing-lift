@@ -39,7 +39,7 @@ const CaseStudy = () => {
               <div className="p-8 flex flex-col">
                 <div className="rounded-xl overflow-hidden mb-6 shadow-md">
                   <img 
-                    src="https://assets.gammaplatform.com/a5f6f5f2-84b5-48be-a4b4-1a12c47f9e46/img/0881ba2d-1e3e-4c1f-bbb3-39876fa2b486.png" 
+                    src="/lovable-uploads/eedd7461-163e-4caa-9943-f16c402fd5f8.png" 
                     alt="Autumn ABA Logo" 
                     className="w-full h-64 object-cover bg-gradient-to-r from-blue-50 to-teal-50 p-8"
                   />
@@ -146,7 +146,7 @@ const CaseStudy = () => {
                 <div className="mt-8 text-center lg:text-left">
                   <Button 
                     className="group bg-blue-600 hover:bg-blue-700 text-white"
-                    onClick={() => window.location.href="#contact"}
+                    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   >
                     Get similar results for your practice
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

@@ -14,26 +14,37 @@ import { toast } from "sonner";
 
 const Index = () => {
   useEffect(() => {
-    // Smooth scrolling for anchor links
-    const handleAnchorClick = (e: MouseEvent) => {
+    // Enhanced smooth scrolling for anchor links and buttons
+    const handleSmoothScroll = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      const link = target.closest('a');
+      const link = target.closest('a, button');
       
-      if (link && link.hash && link.hash.startsWith('#')) {
+      if (!link) return;
+      
+      // Check for anchor links with hash
+      if (link.tagName === 'A' && link.hasAttribute('href') && link.getAttribute('href')?.startsWith('#')) {
         e.preventDefault();
-        const id = link.hash.substring(1);
-        const element = document.getElementById(id);
-        
-        if (element) {
-          window.scrollTo({
-            top: element.offsetTop - 80, // Offset for fixed header
-            behavior: 'smooth'
-          });
-        }
+        const id = link.getAttribute('href')?.substring(1);
+        scrollToElement(id);
+      }
+      
+      // Check for buttons with onClick that use element.scrollIntoView
+      // This is handled directly in the onClick handlers of those buttons
+    };
+    
+    const scrollToElement = (id: string | undefined) => {
+      if (!id) return;
+      
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
       }
     };
     
-    document.addEventListener('click', handleAnchorClick);
+    document.addEventListener('click', handleSmoothScroll);
     
     // Welcome toast
     setTimeout(() => {
@@ -44,7 +55,7 @@ const Index = () => {
     }, 1500);
     
     return () => {
-      document.removeEventListener('click', handleAnchorClick);
+      document.removeEventListener('click', handleSmoothScroll);
     };
   }, []);
 

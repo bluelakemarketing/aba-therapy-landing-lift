@@ -143,6 +143,23 @@
     @apply transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg;
   }
   
+  /* Flip card effect for mobile services */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  
   /* Staggered animation classes */
   .stagger-1 {
     animation-delay: 100ms;

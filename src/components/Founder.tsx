@@ -2,8 +2,11 @@
 import { Briefcase, Trophy, Lightbulb, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Founder = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <section id="founder" className="py-20 md:py-28 bg-white relative overflow-hidden">
       {/* Background elements */}
@@ -13,10 +16,10 @@ const Founder = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Image Side - Made smaller */}
-          <div className="relative order-2 lg:order-1 animate-slide-left">
-            <div className="relative max-w-xs mx-auto lg:max-w-sm rounded-2xl overflow-hidden shadow-xl">
+        <div className="flex flex-col gap-16 items-center">
+          {/* Image Section - Always at the top */}
+          <div className="relative w-full max-w-xs mx-auto lg:max-w-sm animate-slide-left">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img 
                 src="/lovable-uploads/1f85aefa-8d26-41df-ba56-5743d04297db.png" 
                 alt="Dovid Rotshtein - Founder of BlueLake Marketing" 
@@ -26,7 +29,7 @@ const Founder = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             </div>
             
-            {/* Floating elements - Adjusted for smaller image */}
+            {/* Floating elements */}
             <div className="absolute -bottom-5 -left-5 md:-bottom-6 md:-left-6 glass p-3 rounded-xl shadow-lg">
               <div className="flex items-center gap-3">
                 <div className="bg-blue-600 rounded-lg p-2 text-white">
@@ -52,8 +55,8 @@ const Founder = () => {
             </div>
           </div>
           
-          {/* Content Side */}
-          <div className="space-y-8 order-1 lg:order-2 animate-slide-right">
+          {/* Content Section */}
+          <div className="space-y-8 w-full animate-slide-right">
             <div className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
               Meet Our Founder
             </div>
@@ -107,8 +110,6 @@ const Founder = () => {
                 </div>
               </div>
             </div>
-
-            
             
             <Button 
                className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg"
@@ -116,7 +117,6 @@ const Founder = () => {
              >
                Get in Touch
              </Button>
-              
           </div>
         </div>
       </div>

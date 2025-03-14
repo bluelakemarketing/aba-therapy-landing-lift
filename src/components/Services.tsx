@@ -1,8 +1,9 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle, Award, Shield, Users, Clock, Zap, ThumbsUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 // Import this at the top of your file
 const MotionDiv = motion.div;
@@ -99,6 +100,16 @@ const reasons = [
 
 const Services = () => {
   const [activeService, setActiveService] = useState(services[0].id);
+  const [flippedCard, setFlippedCard] = useState<number | null>(null);
+  const isMobile = useIsMobile();
+
+  const handleCardFlip = (id: number) => {
+    if (isMobile) {
+      setFlippedCard(flippedCard === id ? null : id);
+    } else {
+      setActiveService(id);
+    }
+  };
 
   return (
     <section id="services" className="py-20 md:py-28 bg-white relative overflow-hidden">
@@ -119,69 +130,141 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20">
-          {/* Service Tabs */}
-          <div className="lg:col-span-4 order-2 lg:order-1">
-            <div className="bg-gray-50 rounded-2xl p-2 animate-slide-right">
+          {/* Service Tabs - visible only on larger screens */}
+          {!isMobile && (
+            <div className="lg:col-span-4 order-2 lg:order-1">
+              <div className="bg-gray-50 rounded-2xl p-2 animate-slide-right">
+                {services.map((service) => (
+                  <button
+                    key={service.id}
+                    className={`w-full text-left p-4 rounded-xl transition-all duration-300 mb-2 ${
+                      activeService === service.id 
+                        ? "bg-white shadow-md" 
+                        : "hover:bg-white/60"
+                    }`}
+                    onClick={() => setActiveService(service.id)}
+                  >
+                    <div className="flex items-start gap-4">
+                      <div className={`${service.color} p-2.5 rounded-lg text-white`}>
+                        {service.icon}
+                      </div>
+                      <div>
+                        <h3 className="font-medium text-lg">{service.title}</h3>
+                        <p className={`text-sm ${
+                          activeService === service.id 
+                            ? "text-foreground/70" 
+                            : "text-foreground/50"
+                        }`}>
+                          {service.description}
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Service Details for larger screens */}
+          {!isMobile && (
+            <div className="lg:col-span-8 order-1 lg:order-2">
               {services.map((service) => (
-                <button
-                  key={service.id}
-                  className={`w-full text-left p-4 rounded-xl transition-all duration-300 mb-2 ${
-                    activeService === service.id 
-                      ? "bg-white shadow-md" 
-                      : "hover:bg-white/60"
-                  }`}
-                  onClick={() => setActiveService(service.id)}
-                >
-                  <div className="flex items-start gap-4">
-                    <div className={`${service.color} p-2.5 rounded-lg text-white`}>
+                service.id === activeService && (
+                  <div key={service.id} className="animate-scale glass rounded-2xl p-8 shadow-lg">
+                    <div className={`${service.color} w-16 h-16 rounded-2xl text-white flex items-center justify-center mb-6`}>
                       {service.icon}
                     </div>
-                    <div>
-                      <h3 className="font-medium text-lg">{service.title}</h3>
-                      <p className={`text-sm ${
-                        activeService === service.id 
-                          ? "text-foreground/70" 
-                          : "text-foreground/50"
-                      }`}>
-                        {service.description}
-                      </p>
+                    <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                    <p className="text-lg text-foreground/70 mb-6">{service.description}</p>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                      {service.benefits.map((benefit, index) => (
+                        <div key={index} className="flex items-center gap-2">
+                          <div className={`w-6 h-6 rounded-full ${service.color} text-white flex items-center justify-center`}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                          </div>
+                          <span>{benefit}</span>
+                        </div>
+                      ))}
                     </div>
+                    
+                    <Button 
+                      className={`${service.color} hover:opacity-90 transition-opacity text-white rounded-full`}
+                      onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                    >
+                      Contact Us
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
                   </div>
-                </button>
+                )
               ))}
             </div>
-          </div>
+          )}
 
-          {/* Service Details */}
-          <div className="lg:col-span-8 order-1 lg:order-2">
-            {services.map((service) => (
-              service.id === activeService && (
-                <div key={service.id} className="animate-scale glass rounded-2xl p-8 shadow-lg">
-                  <div className={`${service.color} w-16 h-16 rounded-2xl text-white flex items-center justify-center mb-6`}>
-                    {service.icon}
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-                  <p className="text-lg text-foreground/70 mb-6">{service.description}</p>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                    {service.benefits.map((benefit, index) => (
-                      <div key={index} className="flex items-center gap-2">
-                        <div className={`w-6 h-6 rounded-full ${service.color} text-white flex items-center justify-center`}>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
-                        </div>
-                        <span>{benefit}</span>
+          {/* Flip cards for mobile view */}
+          {isMobile && (
+            <div className="col-span-12 order-1 grid grid-cols-1 gap-6">
+              {services.map((service) => (
+                <div 
+                  key={service.id} 
+                  className="relative h-80 w-full perspective-1000"
+                  onClick={() => handleCardFlip(service.id)}
+                >
+                  <div 
+                    className={`absolute inset-0 w-full h-full transition-transform duration-500 transform-style-preserve-3d ${
+                      flippedCard === service.id ? 'rotate-y-180' : ''
+                    }`}
+                  >
+                    {/* Card Front */}
+                    <div className="absolute inset-0 backface-hidden glass rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+                      <div className={`${service.color} w-16 h-16 rounded-2xl text-white flex items-center justify-center mb-4`}>
+                        {service.icon}
                       </div>
-                    ))}
+                      <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                      <p className="text-foreground/70 text-sm">{service.description}</p>
+                      <div className="mt-4 text-blue-600 font-medium flex items-center">
+                        Tap to see details
+                        <ArrowRight className="ml-1 h-4 w-4" />
+                      </div>
+                    </div>
+                    
+                    {/* Card Back */}
+                    <div className="absolute inset-0 backface-hidden rotate-y-180 glass rounded-2xl p-6 flex flex-col justify-between">
+                      <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                      
+                      <div className="flex-1 overflow-y-auto">
+                        <div className="space-y-2 mb-4">
+                          {service.benefits.map((benefit, index) => (
+                            <div key={index} className="flex items-center gap-2">
+                              <div className={`w-5 h-5 rounded-full ${service.color} text-white flex items-center justify-center flex-shrink-0`}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                              </div>
+                              <span className="text-sm">{benefit}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      
+                      <Button 
+                        className={`${service.color} w-full hover:opacity-90 transition-opacity text-white rounded-full mt-2`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                      >
+                        Contact Us
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                      
+                      <div className="mt-3 text-center text-sm text-blue-600">
+                        Tap again to flip back
+                      </div>
+                    </div>
                   </div>
-                  
-                  <Button className={`${service.color} hover:opacity-90 transition-opacity text-white rounded-full`}>
-                    Contact Us
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
                 </div>
-              )
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
         
         {/* Why Work With Us section - Enhanced and redesigned */}
@@ -215,8 +298,11 @@ const Services = () => {
             </div>
             
             <div className="mt-10 text-center">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-full text-lg shadow-md hover:shadow-lg transition-all">
-                Get Started Today
+              <Button 
+                className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-full text-lg shadow-md hover:shadow-lg transition-all"
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Our Services
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
