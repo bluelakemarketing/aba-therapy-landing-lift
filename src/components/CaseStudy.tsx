@@ -9,7 +9,6 @@ const CaseStudy = () => {
     <section id="case-study" className="py-20 md:py-28 bg-gradient-to-b from-white to-blue-50 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('/lovable-uploads/d3176bb3-7238-4f68-85ff-feb7a843005b.png')] bg-no-repeat bg-right-top opacity-5"></div>
         <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-blue-200 mix-blend-multiply filter blur-3xl opacity-30"></div>
         <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-teal-200 mix-blend-multiply filter blur-3xl opacity-30"></div>
       </div>
@@ -40,35 +39,28 @@ const CaseStudy = () => {
               <div className="p-8 flex flex-col">
                 <div className="rounded-xl overflow-hidden mb-6 shadow-md">
                   <img 
-                    src="/lovable-uploads/d3176bb3-7238-4f68-85ff-feb7a843005b.png"
-                    alt="Child during ABA therapy session" 
-                    className="w-full h-64 object-cover"
+                    src="https://assets.gammaplatform.com/a5f6f5f2-84b5-48be-a4b4-1a12c47f9e46/img/0881ba2d-1e3e-4c1f-bbb3-39876fa2b486.png" 
+                    alt="Autumn ABA Logo" 
+                    className="w-full h-64 object-cover bg-gradient-to-r from-blue-50 to-teal-50 p-8"
                   />
-                </div>
-                
-                <div className="flex justify-center mb-6">
-                  <div className="w-48 h-48 bg-white p-4 rounded-xl shadow-sm">
-                    <img 
-                      src="https://assets.gammaplatform.com/a5f6f5f2-84b5-48be-a4b4-1a12c47f9e46/img/0881ba2d-1e3e-4c1f-bbb3-39876fa2b486.png" 
-                      alt="Autumn ABA Logo" 
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
                 </div>
                 
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-blue-600">Autumn ABA</h3>
                   <p className="text-foreground/70">ABA Therapy Provider</p>
                 </div>
+                
+                <div className="bg-gradient-to-r from-blue-500 to-teal-500 p-6 rounded-xl text-white">
+                  <h4 className="text-xl font-bold mb-2">Autumn ABA: Rapid Growth Through Digital Marketing</h4>
+                  <p className="italic">
+                    "Blue Lake Marketing transformed our digital presence and helped us connect with the families who need our services."
+                  </p>
+                </div>
               </div>
               
               {/* Right side - Case study content */}
               <div className="p-8 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-3xl font-bold mb-6">
-                    Rapid Growth Through Digital Marketing
-                  </h3>
-                  
                   <div className="mb-8">
                     <h4 className="text-xl font-semibold text-blue-600 mb-4">Challenge</h4>
                     <p className="text-foreground/80 mb-4">
