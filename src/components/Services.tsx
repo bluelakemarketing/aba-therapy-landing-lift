@@ -111,6 +111,11 @@ const Services = () => {
     }
   };
 
+  const scrollToContact = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation(); // Prevent event bubbling for mobile flip cards
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="services" className="py-20 md:py-28 bg-white relative overflow-hidden">
       {/* Background elements */}
@@ -190,7 +195,7 @@ const Services = () => {
                     
                     <Button 
                       className={`${service.color} hover:opacity-90 transition-opacity text-white rounded-full`}
-                      onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                      onClick={scrollToContact}
                     >
                       Contact Us
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -247,10 +252,7 @@ const Services = () => {
                       
                       <Button 
                         className={`${service.color} w-full hover:opacity-90 transition-opacity text-white rounded-full mt-2`}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                        }}
+                        onClick={scrollToContact}
                       >
                         Contact Us
                         <ArrowRight className="ml-2 h-4 w-4" />
@@ -267,7 +269,7 @@ const Services = () => {
           )}
         </div>
         
-        {/* Why Work With Us section - Enhanced and redesigned */}
+        {/* Why Work With Us section */}
         <div className="max-w-6xl mx-auto">
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-10 shadow-md border border-blue-100 animate-fade-in">
             <div className="flex flex-col md:flex-row items-center gap-8 mb-8">

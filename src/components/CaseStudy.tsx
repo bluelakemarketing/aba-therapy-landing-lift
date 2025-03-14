@@ -39,9 +39,9 @@ const CaseStudy = () => {
               <div className="p-8 flex flex-col">
                 <div className="rounded-xl overflow-hidden mb-6 shadow-md">
                   <img 
-                    src="/lovable-uploads/eedd7461-163e-4caa-9943-f16c402fd5f8.png" 
+                    src="/lovable-uploads/97185bcb-ba20-4549-a0b7-6d36ce8e002a.png" 
                     alt="Autumn ABA Logo" 
-                    className="w-full h-64 object-cover bg-gradient-to-r from-blue-50 to-teal-50 p-8"
+                    className="w-full h-64 object-contain bg-gradient-to-r from-blue-50 to-teal-50 p-8"
                   />
                 </div>
                 
@@ -159,7 +159,7 @@ const CaseStudy = () => {
               <div className="flex flex-col md:flex-row items-center justify-between">
                 <div className="flex items-center mb-4 md:mb-0">
                   <img
-                    src="https://www.gravatar.com/avatar/0?d=mp"
+                    src="/lovable-uploads/1f85aefa-8d26-41df-ba56-5743d04297db.png"
                     alt="Dovid Rotshtein"
                     className="w-10 h-10 rounded-full mr-3 border-2 border-white/20"
                   />

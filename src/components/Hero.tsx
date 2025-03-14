@@ -28,10 +28,17 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-foreground/80 max-w-xl">We help ABA therapy providers connect with more families through tailored digital marketing strategies that increase visibility, build trust, and drive growth. </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg">
+              <Button 
+                className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Schedule a Consultation
               </Button>
-              <Button variant="outline" className="border-blue-200 text-blue-700 hover:bg-blue-50 rounded-full h-12 px-8 text-lg group">
+              <Button 
+                variant="outline" 
+                className="border-blue-200 text-blue-700 hover:bg-blue-50 rounded-full h-12 px-8 text-lg group"
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Our Services
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
