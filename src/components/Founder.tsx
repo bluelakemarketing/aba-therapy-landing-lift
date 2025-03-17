@@ -30,7 +30,7 @@ const Founder = () => {
             </div>
             
             {/* Floating elements for mobile */}
-            <div className="absolute -bottom-5 -left-5 glass p-3 rounded-xl shadow-lg">
+            <div className="absolute -bottom-1 -left-5 glass p-3 rounded-xl shadow-lg">
               <div className="flex items-center gap-3">
                 <div className="bg-blue-600 rounded-lg p-2 text-white">
                   <Trophy size={20} />
@@ -42,7 +42,7 @@ const Founder = () => {
               </div>
             </div>
             
-            <div className="absolute -top-5 -right-5 glass p-3 rounded-xl shadow-lg">
+            <div className="absolute -top-3 -right-5 glass p-3 rounded-xl shadow-lg">
               <div className="flex items-center gap-3">
                 <div className="bg-teal-600 rounded-lg p-2 text-white">
                   <Lightbulb size={20} />
@@ -54,6 +54,7 @@ const Founder = () => {
               </div>
             </div>
           </div>
+        
           
           {/* Content Side */}
           <div className="space-y-8 w-full lg:w-1/2 animate-slide-right order-2 lg:order-1">
@@ -155,6 +156,7 @@ const Founder = () => {
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
