@@ -66,7 +66,7 @@ const Founder = () => {
             </h2>
             
             <p className="text-lg text-foreground/70">
-              Dovid gained deep marketing expertise as a Copywriter at Ganeden Biotech (5+ years), managing SEO, SEM, and social media for national brands like Digestive Advantage® and enLiven Yogurt. He later served as Marketing Manager at 121eCommerce (nearly 4 years), overseeing digital strategies, performance analysis, partner management, and leading the creation of a new corporate website.
+              A passionate digital marketing specialist with deep expertise in the ABA therapy sector, Dovid founded BlueLake Marketing to help therapy providers connect with the families who need them most.
             </p>
             
             <div className="space-y-6">
@@ -77,7 +77,7 @@ const Founder = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Professional Background</h3>
                   <p className="text-foreground/70">
-                    Prior to founding BlueLake Marketing, Dovid served as Marketing Director at Positive Behavioral Connections and Digital Marketing Manager at ABA Centers of America, gaining invaluable industry insights.
+                    Dovid gained deep marketing expertise as a Copywriter at Ganeden Biotech (5+ years), managing SEO, SEM, and social media for national brands like Digestive Advantage® and enLiven Yogurt. He later served as Marketing Manager at 121eCommerce (nearly 4 years), overseeing digital strategies, performance analysis, partner management, and leading the creation of a new corporate website.
                   </p>
                 </div>
               </div>
