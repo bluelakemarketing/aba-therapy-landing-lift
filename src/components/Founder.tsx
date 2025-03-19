@@ -60,7 +60,7 @@ const Founder = () => {
           <div className="space-y-8 w-full lg:w-1/2 animate-slide-right order-2 lg:order-1"            >
             <Button 
               className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.open('https://www.linkedin.com/in/dovidrotshtein/', '_blank')}
               >
               Meet Our Founder
               
