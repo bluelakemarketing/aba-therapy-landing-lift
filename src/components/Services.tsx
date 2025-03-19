@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle, Award, Shield, Users, Clock, Zap, ThumbsUp, Computer, Magnifier, Help } from "lucide-react";
+import { ArrowRight, CheckCircle, Award, Shield, Users, Clock, Zap, ThumbsUp, Computer, HandHelping } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -89,11 +89,11 @@ const reasons = [
     text: "Proven track record of client growth"
   },
   {
-    icon: <Magnifier className="w-5 h-5 text-blue-600" />,
+    icon: <Users className="w-5 h-5 text-blue-600" />,
     text: "Transparent reporting and communication"
   },
   {
-    icon: <Help className="w-5 h-5 text-blue-600" />,
+    icon: <HandHelping className="w-5 h-5 text-blue-600" />,
     text: "White glove customer service"
   }
 ];
