@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle, Award, Shield, Users, Clock, Zap, ThumbsUp } from "lucide-react";
+import { ArrowRight, CheckCircle, Award, Shield, Users, Clock, Zap, ThumbsUp, Computer, Magnifier, Help } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -81,7 +81,7 @@ const reasons = [
     text: "HIPAA-compliant marketing practices"
   },
   {
-    icon: <Users className="w-5 h-5 text-blue-600" />,
+    icon: <Computer className="w-5 h-5 text-blue-600" />,
     text: "Custom strategies for your unique needs"
   },
   {
