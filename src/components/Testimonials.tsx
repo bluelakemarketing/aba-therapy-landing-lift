@@ -5,34 +5,18 @@ import { ArrowLeft, ArrowRight, Star } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    quote: "Working with BlueLake Marketing transformed our ABA practice. Within six months, our client base increased by 40% and we had to hire additional therapists to meet demand.",
-    author: "Dr. Sarah Johnson",
-    position: "Clinical Director, Sunshine ABA Therapy",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop",
+    quote: "We've been with Blue Lake Marketing since 2013 and they’ve been instrumental in the growth of our business. They're constantly recommending ways to improve our business and they launched a Google Ads campaign that has made our phone ring with quality leads.",
+    author: "Rechama Jacobovitch",
+    position: "Clinical Director, Building Blocks Therapy",
+    image: "/Testimonial 1.webp",
     rating: 5
   },
   {
     id: 2,
-    quote: "The team at BlueLake truly understands the unique marketing challenges faced by ABA providers. They created a website and digital strategy that perfectly communicates our approach and values to families.",
-    author: "Michael Chen",
-    position: "CEO, Spectrum Behavioral Services",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop",
-    rating: 5
-  },
-  {
-    id: 3,
-    quote: "Our online presence was practically non-existent before partnering with BlueLake. Now we're ranking at the top of local searches and getting qualified inquiries every day. The ROI has been incredible.",
-    author: "Jennifer Martinez",
-    position: "Operations Manager, Behavioral Milestones",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop",
-    rating: 5
-  },
-  {
-    id: 4,
-    quote: "BlueLake's approach to marketing is thorough and professional. They took the time to understand our practice and created a strategy that helped us reach more families while maintaining the highest ethical standards.",
-    author: "Dr. Robert Thompson",
-    position: "Founder, Thompson ABA Center",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop",
+    quote: "Before we started working with Dovid Rotshtein and Blue Lake Marketing, we were excited about each lead that slowly trickled our way. With Dovid's assistance, we were able to scale to a point where we had a reliable and consistent flow of leads coming our way. When working with Dovid, you are working with someone who genuinely cares deeply about your success and will diligently work to ensure you are thriving. He takes the time to understand your needs and will work with you to create an executable and measurable plan to achieve your goals. Not only are the results incredible but the way Dovid integrates into your systems to ensure long-term success is remarkable. If you are seeking a marketing partner who will do whatever it takes to get you where you need to be Dovid Rothstein and Blue Lake Marketing are the clear choice.",
+    author: "Jacob Klein",
+    position: "CEO, Magical Moments ABA",
+    image: "/Testimonial 2.webp",
     rating: 5
   }
 ];
