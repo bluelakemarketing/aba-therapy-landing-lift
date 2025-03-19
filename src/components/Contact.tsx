@@ -134,7 +134,9 @@ const Contact = () => {
                 <p className="text-foreground/70 mb-6">
                   Book a free 30-minute consultation to discuss your ABA practice's marketing needs.
                 </p>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12">
+                <Button className="w-full bg-green-600 hover:bg-blue-700 text-white rounded-full h-12"
+                  onClick={() => window.open('https://calendly.com/dovid-rotshtein/', '_blank')}
+                  >
                   BOOK DISCOVERY CALL
                 </Button>
               </div>
