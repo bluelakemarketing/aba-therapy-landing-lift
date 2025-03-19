@@ -57,10 +57,10 @@ const Founder = () => {
         
           
           {/* Content Side */}
-          <div className="space-y-8 w-full lg:w-1/2 animate-slide-right order-2 lg:order-1">
-            <div className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium"
-              onClick={() => window.open('https://www.linkedin.com/in/dovidrotshtein/', '_blank')}
-              >
+          <div className="space-y-8 w-full lg:w-1/2 animate-slide-right order-2 lg:order-1"
+            onClick={() => window.open('https://www.linkedin.com/in/dovidrotshtein/', '_blank')}
+            >
+            <div className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
               Meet Our Founder
               
             </div>
@@ -117,7 +117,7 @@ const Founder = () => {
             
             <Button 
               className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg"
-              onClick={() => window.open('https://www.linkedin.com/in/dovidrotshtein/', '_blank')}
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Get in Touch
             </Button>
