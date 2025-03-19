@@ -116,9 +116,7 @@ const Founder = () => {
             </div>
             
             <Button 
-              className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            >
+              className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg">
               Get in Touch
             </Button>
           </div>
