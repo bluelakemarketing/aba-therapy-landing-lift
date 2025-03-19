@@ -8,7 +8,7 @@ const testimonials = [
     quote: "We've been with Blue Lake Marketing since 2013 and they’ve been instrumental in the growth of our business. They're constantly recommending ways to improve our business and they launched a Google Ads campaign that has made our phone ring with quality leads.",
     author: "Rechama Jacobovitch",
     position: "Clinical Director, Building Blocks Therapy",
-    image: "/Testimonial 1.webp",
+    image: "/lovable-uploads/Testimonial 1.webp",
     rating: 5
   },
   {
@@ -16,7 +16,7 @@ const testimonials = [
     quote: "Before we started working with Dovid Rotshtein and Blue Lake Marketing, we were excited about each lead that slowly trickled our way. With Dovid's assistance, we were able to scale to a point where we had a reliable and consistent flow of leads coming our way. When working with Dovid, you are working with someone who genuinely cares deeply about your success and will diligently work to ensure you are thriving. He takes the time to understand your needs and will work with you to create an executable and measurable plan to achieve your goals. Not only are the results incredible but the way Dovid integrates into your systems to ensure long-term success is remarkable. If you are seeking a marketing partner who will do whatever it takes to get you where you need to be Dovid Rothstein and Blue Lake Marketing are the clear choice.",
     author: "Jacob Klein",
     position: "CEO, Magical Moments ABA",
-    image: "/Testimonial 2.webp",
+    image: "/lovable-uploads/Testimonial 2.webp",
     rating: 5
   }
 ];
