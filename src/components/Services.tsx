@@ -81,7 +81,7 @@ const reasons = [
     text: "HIPAA-compliant marketing practices"
   },
   {
-    icon: <Computer className="w-5 h-5 text-blue-600" />,
+    icon: <Users className="w-5 h-5 text-blue-600" />,
     text: "Custom strategies for your unique needs"
   },
   {
@@ -89,11 +89,11 @@ const reasons = [
     text: "Proven track record of client growth"
   },
   {
-    icon: <MagnifyingGlass className="w-5 h-5 text-blue-600" />,
+    icon: <Users className="w-5 h-5 text-blue-600" />,
     text: "Transparent reporting and communication"
   },
   {
-    icon: <Glove className="w-5 h-5 text-blue-600" />,
+    icon: <Users className="w-5 h-5 text-blue-600" />,
     text: "White glove customer service"
   }
 ];
