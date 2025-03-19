@@ -89,11 +89,11 @@ const reasons = [
     text: "Proven track record of client growth"
   },
   {
-    icon: <Users className="w-5 h-5 text-blue-600" />,
+    icon: <Magnifier className="w-5 h-5 text-blue-600" />,
     text: "Transparent reporting and communication"
   },
   {
-    icon: <Users className="w-5 h-5 text-blue-600" />,
+    icon: <Help className="w-5 h-5 text-blue-600" />,
     text: "White glove customer service"
   }
 ];
