@@ -57,13 +57,14 @@ const Founder = () => {
         
           
           {/* Content Side */}
-          <div className="space-y-8 w-full lg:w-1/2 animate-slide-right order-2 lg:order-1"
-            onClick={() => window.open('https://www.linkedin.com/in/dovidrotshtein/', '_blank')}
-            >
-            <div className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
+          <div className="space-y-8 w-full lg:w-1/2 animate-slide-right order-2 lg:order-1"            >
+            <Button 
+              className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
               Meet Our Founder
               
-            </div>
+            </Button>
             
             <h2 className="text-3xl md:text-4xl font-bold leading-tight">
               Dovid Rotshtein, <span className="text-blue-600">Founder & CEO</span>
@@ -116,7 +117,9 @@ const Founder = () => {
             </div>
             
             <Button 
-              className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg">
+              className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
               Get in Touch
             </Button>
           </div>
