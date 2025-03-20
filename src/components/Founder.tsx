@@ -122,13 +122,15 @@ const Founder = () => {
               >
               Get in Touch
             </Button>
-                <a 
+            <div className="flex gap-4">
+                <a className="text-xl font-semibold mb-2 text-blue-700"
                     href="https://www.linkedin.com/in/dovidrotshtein/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                 >
                    LinkedIn
                 </a>
+              </div>
           </div>
           
           {/* Desktop Image - Only visible on larger screens */}
