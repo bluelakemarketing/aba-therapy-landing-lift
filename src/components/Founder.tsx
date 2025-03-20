@@ -82,7 +82,7 @@ const Founder = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Professional Background</h3>
                   <p className="text-foreground/70">
-                    Dovid gained deep marketing expertise as a Copywriter at Ganeden Biotech (5+ years), managing SEO, SEM, and social media for national brands like Digestive Advantage® and enLiven Yogurt. He later served as Marketing Manager at 121eCommerce (nearly 4 years), overseeing digital strategies, performance analysis, partner management, and leading the creation of a new corporate website.
+                      Dovid started his career over 20 years ago and gained deep marketing expertise as a Copywriter at Practice Builders and then later at Ganeden Biotech, managing SEO, SEM, and social media for national brands like Digestive Advantage® and enLiven Yogurt. He later served as Marketing Manager at 121eCommerce, overseeing digital strategies, performance analysis, partner management, and leading the creation of a new corporate website.
                   </p>
                 </div>
               </div>
@@ -122,6 +122,13 @@ const Founder = () => {
               >
               Get in Touch
             </Button>
+                <a 
+                    href="https://www.linkedin.com/in/dovidrotshtein/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                   LinkedIn
+                </a>
           </div>
           
           {/* Desktop Image - Only visible on larger screens */}
