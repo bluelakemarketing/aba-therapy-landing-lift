@@ -60,7 +60,6 @@ const Founder = () => {
           <div className="space-y-8 w-full lg:w-1/2 animate-slide-right order-2 lg:order-1"            >
             <Button 
               className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium"
-              onClick={() => window.open('https://www.linkedin.com/in/dovidrotshtein/', '_blank')}
               >
               Meet Our Founder
               
@@ -115,22 +114,29 @@ const Founder = () => {
                 </div>
               </div>
             </div>
+
             
-            <Button 
-              className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-              Get in Touch
-            </Button>
-            <div className="flex gap-4">
-                <a className="text-xl font-semibold mb-2 text-blue-700"
-                    href="https://www.linkedin.com/in/dovidrotshtein/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+           <div className="space-y-6">
+             
+             <div className="flex gap-4">
+              <Button 
+                className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                   LinkedIn
-                </a>
+                Get in Touch
+              </Button>
+              </div>  
+             
+             <div className="flex gap-4">
+                <Button 
+                  className="bg-blue-600 hover:bg-blue-700 text-sm rounded-full h-12 px-8 font-semibold mb-2 text-white"
+                  onClick={() => window.open('https://www.linkedin.com/in/dovidrotshtein/', '_blank')}              
+                  >
+                  LinkedIn
+                </Button>
               </div>
+  
+            </div>
           </div>
           
           {/* Desktop Image - Only visible on larger screens */}
