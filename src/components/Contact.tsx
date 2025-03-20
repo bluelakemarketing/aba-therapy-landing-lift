@@ -34,7 +34,6 @@ const Contact = () => {
           Name: ${formData.name}
           Email: ${formData.email}
           Phone: ${formData.phone || 'Not provided'}
-          ABA Practice: ${formData.company}
           
           Message:
           ${formData.message}
@@ -67,7 +66,6 @@ const Contact = () => {
         name: "",
         email: "",
         phone: "",
-        company: "",
         message: "",
       });
     } catch (error) {
@@ -190,18 +188,7 @@ const Contact = () => {
                     />
                   </div>
                   
-                  <div className="space-y-2">
-                    <label htmlFor="company" className="text-sm font-medium">ABA Practice Name*</label>
-                    <Input
-                      id="company"
-                      name="company"
-                      value={formData.company}
-                      onChange={handleChange}
-                      placeholder="Your ABA Practice"
-                      required
-                      className="rounded-lg border-gray-200 focus:border-blue-500 focus:ring-blue-500 h-12"
-                    />
-                  </div>
+                 
                 </div>
                 
                 <div className="space-y-2">
@@ -222,7 +209,7 @@ const Contact = () => {
                   disabled={isSubmitting}
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 text-lg"
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {isSubmitting ? "Sending..." : "SEND"}
                 </Button>
               </form>
             </div>
