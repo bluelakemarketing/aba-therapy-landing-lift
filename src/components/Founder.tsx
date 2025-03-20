@@ -116,25 +116,26 @@ const Founder = () => {
             </div>
 
             
-           <div className="space-y-6">
+           <div className="flex flex-col sm:flex-row gap-4 pt-4">
              
-             <div>
+            
               <Button 
                 className="bg-blue-600 hover:bg-blue-700 text-white rounded-full h-12 px-8 text-lg"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                 Get in Touch
               </Button>
-              </div>  
              
-             <div>
+             
+            
                 <Button 
-                  className="bg-blue-200 hover:bg-blue-100 text-sm rounded-full h-12 px-8 font-semibold mb-2 text-white"
+                  variant="outline" 
+                  className=" hover:bg-blue-100 text-sm rounded-full h-12 px-8 font-semibold mb-2 text-blue-600"
                   onClick={() => window.open('https://www.linkedin.com/in/dovidrotshtein/', '_blank')}              
                   >
                   LinkedIn
                 </Button>
-              </div>
+              
   
             </div>
           </div>
