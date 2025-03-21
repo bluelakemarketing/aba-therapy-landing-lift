@@ -69,9 +69,6 @@ const Footer = () => {
               <li>
                 <a href="#" className="text-blue-200 hover:text-white transition-colors">Case Studies</a>
               </li>
-              <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors">Resources</a>
-              </li>
             </ul>
           </div>
           
