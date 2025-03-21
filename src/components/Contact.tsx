@@ -41,7 +41,7 @@ const Contact = () => {
       };
       
       // Send form data via email
-      const response = await fetch("https://formsubmit.co/db036cc16c09d3338c71fbb00e0e4e69", {
+      const response = await fetch("https://formsubmit.co/dovid@bluelakemarketing.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
