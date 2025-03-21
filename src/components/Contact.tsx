@@ -27,7 +27,7 @@ const Contact = () => {
     try {
       // Prepare email data
       const emailData = {
-        to: "lay@bluelakemarketing.com",
+        to: "dovid@bluelakemarketing.com",
         subject: `New contact form submission from ${formData.name}`,
         message: `
           Name: ${formData.name}
@@ -40,7 +40,7 @@ const Contact = () => {
       };
       
       // Send form data via email
-      const response = await fetch("https://formsubmit.co/lay@bluelakemarketing.com", {
+      const response = await fetch("https://formsubmit.co/db036cc16c09d3338c71fbb00e0e4e69", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
