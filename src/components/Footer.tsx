@@ -38,7 +38,7 @@ const Footer = () => {
             <div className="flex space-x-4">
              
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/dovidrotshtein/" 
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
                 aria-label="LinkedIn"
               >
