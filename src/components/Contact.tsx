@@ -10,7 +10,6 @@ const Contact = () => {
     name: "",
     email: "",
     phone: "",
-    company: "",
     message: "",
   });
   
@@ -28,8 +27,8 @@ const Contact = () => {
     try {
       // Prepare email data
       const emailData = {
-        to: "db036cc16c09d3338c71fbb00e0e4e69",
-        subject: `New contact form   submission from ${formData.name}`,
+        to: "dovid@bluelakemarketing.com",
+        subject: `New contact form submission from ${formData.name}`,
         message: `
           Name: ${formData.name}
           Email: ${formData.email}
@@ -41,7 +40,7 @@ const Contact = () => {
       };
       
       // Send form data via email
-      const response = await fetch("https://formsubmit.co/dovid@bluelakemarketing.com", {
+      const response = await fetch("https://formsubmit.co/db036cc16c09d3338c71fbb00e0e4e69", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
